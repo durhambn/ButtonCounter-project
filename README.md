@@ -1,3 +1,4 @@
+#README
 # Button-counter
 
 ## DUE: 06 Feb 2020

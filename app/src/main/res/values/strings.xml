@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Button-counter-Durham</string>
+    <string name="clear">Clear</string>
+
+    <string name="count">Count</string>
+    <string name="zero">"0"</string>
 </resources>

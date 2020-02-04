@@ -1,62 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    android:baselineAligned="false">
+    android:baselineAligned="false"
+    android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/countText"
-        android:layout_width="217dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="208dp"
-        android:text="@string/zero"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.289" />
-
-    <Button
-        android:id="@+id/countButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="64dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="@string/count"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countText" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/clearButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="160dp"
-        android:backgroundTint="@android:color/holo_red_light"
-        android:text="@string/clear"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countText" />
+        <TextView
+            android:id="@+id/countText"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="208dp"
+            android:text="@string/zero"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/decrease"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="144dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="@string/decrease"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="@string/decrease"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="@string/clear"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/countButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="@string/count"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

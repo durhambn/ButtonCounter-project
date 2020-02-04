@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+<dimen name="layoutHeight">210dp</dimen>
+    <dimen name="layoutMarginTop">150dp</dimen>
+    <dimen name="textSize">30sp</dimen>
+    <dimen name="layout2Height">111dp</dimen>
+    <dimen name="height">51dp</dimen>
+    <dimen name="topMargin">208dp</dimen>
+    <dimen name="height2">183dp</dimen>
 </resources>

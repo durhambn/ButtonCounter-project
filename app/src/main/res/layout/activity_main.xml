@@ -5,7 +5,9 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:baselineAligned="false">
+
 
     <TextView
         android:id="@+id/countText"
@@ -14,6 +16,7 @@
         android:layout_marginTop="208dp"
         android:text="@string/zero"
         android:textAlignment="center"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,19 +28,35 @@
         android:id="@+id/countButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="92dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
         android:text="@string/count"
-        app:layout_constraintEnd_toStartOf="@+id/clearButton"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countText" />
 
     <Button
         android:id="@+id/clearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="68dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="@android:color/holo_red_light"
         android:text="@string/clear"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countText" />
+
+    <Button
+        android:id="@+id/decrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="144dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="@string/decrease"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
